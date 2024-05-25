@@ -1,0 +1,120 @@
+.section-1 img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.section-1 .titles {
+    color: #ffffff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.titles h1 {
+    /* border: 1px solid red; */
+    font-size: 8rem;
+    text-wrap: nowrap;
+    line-height: 10%;
+}
+
+.titles h4 {
+    font-size: 2.5rem;
+}
+
+.section-2 {
+    margin-top: -4px;
+    background-color: #ffffff;
+}
+
+.section-2 .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.top .l-text {
+    width: 400px;
+    font-size: 35px;
+}
+
+.top .r-text {
+    width: 400px;
+    word-break: break-all;
+}
+
+.display {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.bottom .c-display1 {
+    background-image: url("https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+.bottom .c-display2 {
+    background-image: url("https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+
+.bottom .c-display3 {
+    background-image: url("https://images.unsplash.com/photo-1416397202228-6b2eb5b3bb26?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    width: 450px;
+    height: 300px;
+    position: relative;
+}
+
+.bottom .c-display1 h2 {
+    width: 200px;
+    font-size: 50px;
+    word-break: break-all;
+    position: absolute;
+    /* bottom: 0%; */
+    top: 40%;
+    left: 10%;
+}
+.bottom .c-display2 h2 {
+    width: 250px;
+    font-size: 50px;
+    word-break: break-all;
+    position: absolute;
+    /* bottom: 0%; */
+    top: 40%;
+    left: 10%;
+}
+.bottom .c-display3 h2 {
+    width: 250px;
+    font-size: 50px;
+    word-break: break-all;
+    position: absolute;
+    /* bottom: 0%; */
+    top: 40%;
+    left: 10%;
+}
+
+.d-link {
+    color: #ffffff;
+}

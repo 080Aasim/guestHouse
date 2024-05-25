@@ -1,0 +1,101 @@
+.hero-section {
+    width: 100%;
+}
+
+.hero-section img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 10px;
+    background-color: #ffffff;
+    margin-top: -10px;
+    
+}
+
+
+.hero-section .left-text{
+    width: 400px;
+    font-size: 30px;
+}
+
+.hero-section .right-text{
+    width: 500px;
+    font-size: 18px;
+    word-break: break-all;
+    word-spacing: 1px;
+}
+
+.card-section {
+    background-color: #f7f7f7a5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.card {
+    /* width: 100px; */
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.r-img{
+    width: 400px;
+}
+
+.room-img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.lower-card {
+    /* border: 1px solid black; */
+    padding: 4px 20px;
+}
+
+.title {
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    border-bottom: 1px solid gray;
+    padding-block: 20px;
+}
+
+.about {
+    border-bottom: 1px solid gray;
+}
+
+.about h4 {
+    font-weight: 500;
+    line-height: 35%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+}
+
+button {
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    background-color: #B4864C;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+}
