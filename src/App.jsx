@@ -6,9 +6,12 @@ import NotFound from "./components/NotFound";
 import { Room } from "./components/Room";
 import Home from "./components/Home";
 import ScrollToTop from "./components/ScrollToTop";
-import "./App.css";
 import Breakfast from "./components/Breakfast";
+import Contact from "./components/Contact";
+import Activities from "./components/Activities";
 
+
+import "./App.css";
 function App() {
   return (
     <div className="container">
@@ -18,6 +21,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Rooms" element={<Room />} />
         <Route path="/Breakfast" element={<Breakfast />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Activities" element={<Activities />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

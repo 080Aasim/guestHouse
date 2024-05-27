@@ -1,8 +1,12 @@
 import React from 'react'
-
+import './NotFound.css'
 function NotFound() {
   return (
-    <div>NotFound 404</div>
+    <div className='text'>
+      <h1>
+        ROUTE NOT MATCHED - Click on Home
+      </h1>
+    </div>
   )
 }
 

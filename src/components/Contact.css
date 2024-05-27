@@ -1,0 +1,58 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 40px;
+    gap: 40px;
+}
+
+.left {
+    width: 500px;
+    height: 500px;
+}
+
+.right {
+    background-color: #F7F7F7;
+    padding: 4px 20px;
+}
+
+.right h3 {
+    border-bottom: 1px solid grey; 
+    padding-block: 10px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp input {
+    border: 1px solid black;
+    font-size: 18px;
+    padding-inline-start: 4px;
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.textarea {
+    margin-top: 10px;
+    font-size: 18px;
+    padding-inline-start: 4px;
+}
+
+.email h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
