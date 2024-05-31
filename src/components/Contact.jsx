@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { Envelope } from "phosphor-react";
 import SimpleMap from "./GoogleMap";
+import { motion } from "framer-motion";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -34,27 +35,29 @@ function Contact() {
           <form onSubmit={handleSubmit}>
             <div className="inp">
               <label htmlFor="name">Your name: </label>
-              <input
+              <motion.input
                 type="text"
                 id="name"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                whileFocus={{ scale: 1.1 }}
               />
             </div>
             <div className="inp">
               <label htmlFor="email">Your e-mail: </label>
-              <input
+              <motion.input
                 type="email"
                 id="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                whileFocus={{ scale: 1.1 }}
               />
             </div>
             <div className="inp">
               <label htmlFor="message">Your message: </label>
-              <textarea
+              <motion.textarea
                 type="text"
                 id="message"
                 name="message"
@@ -62,9 +65,17 @@ function Contact() {
                 onChange={handleChange}
                 rows={7}
                 className="textarea"
+                whileFocus={{ scale: 1.1 }}
               />
             </div>
-            <button type="submit">Send</button>
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              type="submit"
+            >
+              Send
+            </motion.button>
           </form>
           <div className="email">
             <h3>Or contact us directly</h3>

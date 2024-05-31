@@ -10,6 +10,7 @@ import {
   YoutubeLogo,
 } from "phosphor-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Footer.css";
 function Footer() {
   return (
@@ -36,16 +37,24 @@ function Footer() {
         <div className="useful-links">
           <ul>
             <li>
-              <Link to="/Activities" className="Link" > Activities </Link>
+              <Link to="/Activities" className="Link">
+                Activities
+              </Link>
             </li>
             <li>
-              <Link to="/Breakfast" className="Link" >Breakfast</Link>
+              <Link to="/Breakfast" className="Link">
+                Breakfast
+              </Link>
             </li>
             <li>
-              <Link to="/Contact" className="Link" >Contact</Link>
+              <Link to="/Contact" className="Link">
+                Contact
+              </Link>
             </li>
             <li>
-              <Link to="/Rooms" className="Link" >Rooms</Link>
+              <Link to="/Rooms" className="Link">
+                Rooms
+              </Link>
             </li>
           </ul>
         </div>
@@ -54,21 +63,21 @@ function Footer() {
         <h3>Follow Us</h3>
         <div className="social-links">
           <ul>
-            <li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <FacebookLogo size={38} weight="fill" className="icon" />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <TwitterLogo size={38} weight="fill" className="icon" />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <PinterestLogo size={38} weight="fill" className="icon" />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <InstagramLogo size={38} weight="fill" className="icon" />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <YoutubeLogo size={38} weight="fill" className="icon" />
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Product } from "../cardInfo";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Home.css";
 function Home() {
   return (
@@ -10,7 +11,17 @@ function Home() {
         <div className="titles">
           <h1>Bed & Breakfast</h1>
           <h4>The Blackwater Ridge House</h4>
-          <button>BUILD YOUR WEBSITE</button>
+          <motion.button
+            whileHover={{
+              scale: 1.2,
+            }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            BUILD YOUR WEBSITE
+          </motion.button>
         </div>
       </div>
       <div className="section-2">
@@ -39,17 +50,35 @@ function Home() {
           <div className="display">
             <div className="c-display1">
               <Link to="/Rooms#top" className="d-link">
-                <h2>Rooms & Rates</h2>
+                <motion.h2
+                  whileHover={{ scale: 1.2 }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
+                >
+                  Rooms & Rates
+                </motion.h2>
               </Link>
             </div>
             <div className="c-display2">
               <Link to="/Breakfast" className="d-link">
-                <h2>Breakfast & Dinning</h2>
+                <motion.h2
+                  whileHover={{ scale: 1.2 }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
+                >
+                  Breakfast & Dinning
+                </motion.h2>
               </Link>
             </div>
             <div className="c-display3">
               <Link to="/Activities" className="d-link">
-                <h2>The area & attractions</h2>
+                <motion.h2
+                  whileHover={{ scale: 1.2 }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
+                >
+                  The area & attractions
+                </motion.h2>
               </Link>
             </div>
           </div>
