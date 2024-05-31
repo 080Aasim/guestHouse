@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 import "./Home.css";
 function Home() {
   return (
-    <div>
+    <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    >
       <div className="section-1">
         <img src={Product[0].image} alt="" />
         <div className="titles">
@@ -84,7 +88,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,8 +1,13 @@
 import React from "react";
 import "./Activities.css";
+import { motion } from "framer-motion";
 function Activities() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div>
         <div className="pic">
           <img
@@ -34,7 +39,7 @@ function Activities() {
           <div className="a-bottom"></div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 

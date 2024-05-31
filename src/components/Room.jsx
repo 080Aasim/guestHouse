@@ -5,7 +5,11 @@ import { Product } from "../cardInfo";
 
 export const Room = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="hero-section">
         <div className="img">
           <img
@@ -81,6 +85,6 @@ export const Room = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
