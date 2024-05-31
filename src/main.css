@@ -1,5 +1,9 @@
-#root {
+#root{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    overflow: hidden;
 }

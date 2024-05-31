@@ -9,13 +9,15 @@ import ScrollToTop from "./components/ScrollToTop";
 import Breakfast from "./components/Breakfast";
 import Contact from "./components/Contact";
 import Activities from "./components/Activities";
-
+import ScrollAnimation from "./components/ScrollAnimation";
 
 import "./App.css";
+
 function App() {
   return (
     <div className="container">
       <ScrollToTop />
+      <ScrollAnimation />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

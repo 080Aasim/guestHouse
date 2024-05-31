@@ -49,7 +49,7 @@ function Home() {
             </div>
             <div className="c-display3">
               <Link to="/Activities" className="d-link">
-              <h2>The area & attractions</h2>
+                <h2>The area & attractions</h2>
               </Link>
             </div>
           </div>
