@@ -15,7 +15,7 @@ function ScrollAnimation() {
       right: 0,
       height: "100%",
       width: "4px",
-      background: "white",
+      background: "#C89A60",
       transformOrigin: "top",
       borderRadius: "4px",
     //   zIndex: 9999,
