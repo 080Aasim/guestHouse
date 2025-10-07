@@ -5,35 +5,56 @@ import { motion } from "framer-motion";
 import "./Home.css";
 function Home() {
   return (
-    <motion.div 
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <div className="section-1">
-        <img src={Product[0].image} alt="" />
-        <div className="titles">
-          <h1>Bed & Breakfast</h1>
-          <h4>The Blackwater Ridge House</h4>
-          <motion.button
-            whileHover={{
-              scale: 1.2,
-            }}
-            onHoverStart={(e) => {}}
-            onHoverEnd={(e) => {}}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        <div className="box">
+          <div className="img">
+            <img
+              src={Product[0].image}
+              // whileHover={{ scale: [null, 1.4, 1.3] }}
+              // transition={{ duration: 0.3 }}
+            />
+          </div>
+          <motion.div
+            className="titles"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ ease: "easeIn", duration: 2 }}
           >
-            BUILD YOUR WEBSITE
-          </motion.button>
+            <h1>Bed & Breakfast</h1>
+            <h4>The Blackwater Ridge House</h4>
+            <motion.button
+              whileHover={{
+                scale: 1.2,
+              }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              BUILD YOUR WEBSITE
+            </motion.button>
+          </motion.div>
         </div>
       </div>
       <div className="section-2">
         <div className="top">
-          <div className="l-text">
+          <motion.div
+            className="l-text"
+            initial="hidden"
+            whileInView={{scale: 1.3}}
+            // viewport={{once: true}}
+            transition={{ease: "easeIn" , duration: 2}}
+          >
             <h2>Welcome to the historic house in Blackwater Ridge</h2>
-          </div>
-          <div className="r-text">
+          </motion.div>
+          <motion.div
+            className="r-text"
+          >
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -48,7 +69,7 @@ function Home() {
               dignissim qui blandit praesent luptatum zzril delenit augue duis
               dolore te feugait nulla facilisi.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="bottom">
           <div className="display">

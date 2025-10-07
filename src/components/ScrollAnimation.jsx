@@ -14,10 +14,10 @@ function ScrollAnimation() {
       left: "99%",
       right: 0,
       height: "100%",
-      width: "4px",
+      width: "8px",
       background: "white",
       transformOrigin: "top",
-      borderRadius: "4px",
+      borderRadius: "8px",
     //   zIndex: 9999,
       scaleY
     }}
